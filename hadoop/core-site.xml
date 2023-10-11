@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+<configuration>
+    <property>
+        <name>fs.default.name</name>
+        <value>hdfs://Ucluster</value>
+    </property>
+    <property>
+        <name>ha.zookeeper.quorum</name>
+        <value>uhadoop-ovsehlf1e92-master1:2181,uhadoop-ovsehlf1e92-master2:2181,uhadoop-ovsehlf1e92-core1:2181</value>
+    </property>
+    <property>
+        <name>hadoop.proxyuser.hive.hosts</name>
+        <value>*</value>
+    </property>
+    <property>
+        <name>hadoop.proxyuser.hive.groups</name>
+        <value>*</value>
+    </property>
+    <property>
+        <name>hadoop.proxyuser.hadoop.hosts</name>
+        <value>*</value>
+    </property>
+    <property>
+        <name>hadoop.proxyuser.hadoop.groups</name>
+        <value>*</value>
+    </property>
+    <property>
+      	<name>hadoop.proxyuser.hue.hosts</name>
+      	<value>*</value>
+    </property>
+    <property>
+    	  <name>hadoop.proxyuser.hue.groups</name>
+    	  <value>*</value>
+    </property>
+    <property>
+      	<name>hadoop.proxyuser.oozie.hosts</name>
+       	<value>*</value>
+    </property>
+    <property>
+    	  <name>hadoop.proxyuser.oozie.groups</name>
+    	  <value>*</value>
+    </property>
+    <property>
+        <name>io.compression.codecs</name>
+        <value>org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.BZip2Codec,com.hadoop.compression.lzo.LzoCodec,com.hadoop.compression.lzo.LzopCodec,org.apache.hadoop.io.compress.SnappyCodec</value>
+    </property>
+    <property>
+        <name>hadoop.http.staticuser.user</name>
+        <value>hadoop</value>
+    </property>
+    <property>
+        <name>ipc.maximum.data.length</name>
+        <value>69415731</value>
+    </property>
+    <property>
+        <name>fs.us3.socket.recv.buffer</name>
+        <value>16348</value>
+    </property>
+    <property>
+        <name>fs.us3.thread.pool.size</name>
+        <value>8</value>
+    </property>
+    <property>
+        <name>fs.us3.log.level</name>
+        <value>info</value>
+    </property>
+    <property>
+        <name>fs.us3.async.wio.use</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>fs.us3.async.wio.parallel</name>
+        <value>2</value>
+    </property>
+    <property>
+        <name>fs.us3.metadata.use</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>fs.us3.metadata.host</name>
+        <value></value>
+    </property>
+    <property>
+        <name>fs.us3.metadata.zookeeper.addrs</name>
+        <value>uhadoop-ovsehlf1e92-master1:2181,uhadoop-ovsehlf1e92-master2:2181,uhadoop-ovsehlf1e92-core1:2181</value>
+    </property>
+    <property>
+        <name>fs.us3.retryTimes</name>
+        <value>5</value>
+    </property>
+    <property>
+        <name>fs.us3.timeout</name>
+        <value>60</value>
+    </property>
+    <property>
+        <name>fs.us3.impl</name>
+        <value>cn.ucloud.us3.fs.US3FileSystem</value>
+    </property>
+    <property>
+        <name>fs.AbstractFileSystem.us3.impl</name>
+        <value>cn.ucloud.us3.fs.US3Fs</value>
+    </property>
+    <property>
+        <name>fs.us3.endpoint</name>
+        <value>ufile.cn-north-02.ucloud.cn</value>
+    </property>
+    <property>
+        <name>fs.us3.access.key</name>
+        <value></value>
+    </property>
+    <property>
+        <name>fs.us3.secret.key</name>
+        <value></value>
+    </property>
+</configuration>
